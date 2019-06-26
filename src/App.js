@@ -34,8 +34,6 @@ function App() {
       <ul className="c7 lst-kix_41m63nyv7fxz-0">
           <li className="c2"><span className="c1">React.js / Next.js</span></li>
           <li className="c2"><span className="c1">Vue.js / Nuxt.js</span></li>
-          <li className="c2"><span className="c1">Bootstrap 4 / Bootstrap for Vue.js</span></li>
-          <li className="c2"><span className="c1">JQuery</span></li>
       </ul>
       <h1 className="c0" id="h.oze3tgkrob2d"><span className="c4">Server Stack</span></h1>
       <ul className="c7 lst-kix_41m63nyv7fxz-0">
