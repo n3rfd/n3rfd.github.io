@@ -5,9 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e9ebee;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  width: 600px;
+  margin: 100px auto;
+}
+
+.icon-box {
+  background-color: black;
+  margin: 3px;
+  font-size: 32px;
+  color: white;
+}
+
+.company-box {
+  padding: 3px;
+  width: 400px;
+  border: 1px solid;
+  margin-bottom: 5px;
+  background-color: #FFF;
+  border: 1px solid #dddfe2;
+}
+
+.years {
+  font-size: .775rem;
+  color: #888;
+}
+
+.tags {
+  background-color: #888;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: .775rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.tags-wrapper {
+  width: 395px;
+  margin: 0;
+  padding: 10px 5px 0;
+  background-color: #FFF;
+  border: 1px solid #dddfe2;
+}
+
+.tags-wrapper legend {
+  font-size: 10px;
+}
+
+.spacer {
+  margin: 10px;
+  width: 600px;
+}
+
+.about-me {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.twitter-link {
+  text-decoration: none;
 }
