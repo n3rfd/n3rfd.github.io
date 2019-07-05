@@ -123,13 +123,13 @@ function App() {
           <legend>Backend</legend>
           <span className="tags">nodejs</span>
           <span className="tags">aws</span>
-          <span className="tags">aws amplify</span>
-          <span className="tags">aws appSync</span>
-          <span className="tags">aws graphQL</span>
+          <span className="tags">aws-amplify</span>
+          <span className="tags">aws-appsync</span>
+          <span className="tags">graphQL</span>
           <span className="tags">serverless</span>
           <span className="tags">microservices</span>
         </fieldset>
-
+i
         <fieldset className="tags-wrapper">
           <legend>Others</legend>
           <span className="tags">github</span>
