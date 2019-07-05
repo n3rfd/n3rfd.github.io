@@ -76,8 +76,8 @@ function App() {
 
   return skills ? (
     <Grid container justify="center">
-      {/* <GitHubButton href="https://github.com/android86/android86.github.io" 
-                    data-show-count="true" 
+      {/* <GitHubButton href="https://github.com/android86/android86.github.io"
+                    data-show-count="true"
                     aria-label="Star android86/android86.github.io on GitHub"
                     className="foo">Star</GitHubButton> */}
 
@@ -93,9 +93,9 @@ function App() {
         <fieldset className="tags-wrapper">
           <legend>about me</legend>
           <p className="about-me">
-          I am ambitious and driven. 
-          I thrive on challenge and constantly set goals for myself, so I have something to strive toward. 
-          I’m not comfortable with settling, and I’m always looking for an opportunity to do better and achieve greatness. 
+          I am ambitious and driven.
+          I thrive on challenge and constantly set goals for myself, so I have something to strive toward.
+          I’m not comfortable with settling, and I’m always looking for an opportunity to do better and achieve greatness.
           In my previous role, I was promoted two times in less than three years.
           </p>
         </fieldset>
@@ -124,6 +124,8 @@ function App() {
           <span className="tags">nodejs</span>
           <span className="tags">aws</span>
           <span className="tags">aws amplify</span>
+          <span className="tags">aws appSync</span>
+          <span className="tags">aws graphQL</span>
           <span className="tags">serverless</span>
           <span className="tags">microservices</span>
         </fieldset>
