@@ -129,7 +129,7 @@ function App() {
           <span className="tags">serverless</span>
           <span className="tags">microservices</span>
         </fieldset>
-i
+
         <fieldset className="tags-wrapper">
           <legend>Others</legend>
           <span className="tags">github</span>
