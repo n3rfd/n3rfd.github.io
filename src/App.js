@@ -135,7 +135,6 @@ function App() {
           <span className="tags">github</span>
           <span className="tags">travis-ci</span>
           <span className="tags">codecov</span>
-          <span className="tags">codeclimate</span>
         </fieldset>
       </div>
 
@@ -188,7 +187,7 @@ function App() {
           <span className="tags">phpunit</span>
           <span className="tags">mocha</span>
           <span className="tags">chai</span>
-          <span className="tags">techlead</span>
+          <span className="tags">aws-cloudformation</span>
         </fieldset>
       </div>
       {/* </div> */}
