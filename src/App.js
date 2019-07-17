@@ -107,7 +107,7 @@ function App() {
       <Avatar className={classes.blackAvatar}>OP</Avatar>
       <div>
         <section className="company-box">
-          <span>Open Source</span> <a className="years" target="_blank" href="https://github.com/android86">(https://github.com/android86)</a>
+          <span>Open Source</span> <a className="years" target="_blank" href="https://github.com/n3rfd">(https://github.com/n3rfd)</a>
           <p className="years">2019</p>
         </section>
 
@@ -291,29 +291,6 @@ function App() {
         </section>
       </div>
     </Grid>
-    // <Container maxWidth="sm">
-    //   <Grid container >
-    //     <Grid item xs={6}>
-
-    //         <Avatar className={classes.blackAvatar}>BS</Avatar>
-    //         <section>Bridge Software</section>
-    //       <div>
-    //           <p className="c12"><span className="c11 c13"></span></p>
-    //       </div>
-    //       <p className="c15 title" id="h.5rf9wr4r3no2">
-    //         <span className="c11">Hello</span>
-    //         <span className="c9"><br /></span>
-    //         <span>I&rsquo;m Neftali Papelleras</span>
-    //       </p>
-    //       <p className="c3"><span className="c16">Cebu City, Philippines</span></p>
-    //       <p className="c3"><span className="c6"><a className="c5" href="mailto:iam@neftalipapelleras.com">iam@neftalipapelleras.com</a></span></p>
-    //       <p className="c3"><span className="c8">(+63) 932 919 5661</span></p>
-    //       <Backend skills={skills}/>
-    //     </Grid>
-    //     <Grid item xs={6}>
-    //     </Grid>
-    //   </Grid>
-    // </Container>
   ) : (
     <div>Loading...</div>
   )
