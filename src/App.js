@@ -1,36 +1,36 @@
-import React, { useEffect, useState } from 'react';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import Avatar from '@material-ui/core/Avatar';
-import Modal from '@material-ui/core/Modal';
-import { makeStyles } from '@material-ui/styles';
+import React, { useEffect, useState } from "react";
+import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import ListItemAvatar from "@material-ui/core/ListItemAvatar";
+import Avatar from "@material-ui/core/Avatar";
+import Modal from "@material-ui/core/Modal";
+import { makeStyles } from "@material-ui/styles";
 
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import FaceIcon from '@material-ui/icons/Face';
-import ComputerIcon from '@material-ui/icons/Computer';
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+import FaceIcon from "@material-ui/icons/Face";
+import ComputerIcon from "@material-ui/icons/Computer";
 
-import { API, graphqlOperation } from 'aws-amplify'
-import { listSkills } from './graphql/queries'
+import { API, graphqlOperation } from "aws-amplify";
+import { listSkills } from "./graphql/queries";
 
-import GitHubButton from 'react-github-btn'
+import GitHubButton from "react-github-btn";
 
-import Backend from './Backend'
+import Backend from "./Backend";
 
-import profile from './profile.jpeg'
+import profile from "./profile.jpeg";
 
 const useStyles = makeStyles({
   avatar: {
     marginLeft: 17,
     marginRight: 20,
-    marginTop: 0,
+    marginTop: 0
   },
   blackAvatar: {
     marginLeft: 10,
     marginRight: 10,
     marginTop: 0,
-    color: '#fff',
-    backgroundColor: '#000',
+    color: "#fff",
+    backgroundColor: "#000",
     borderRadius: 0,
     minWidth: 56,
     flexShrink: 0
@@ -44,7 +44,7 @@ const useStyles = makeStyles({
 });
 
 function App() {
-  const [skills, setSkills] = useState()
+  const [skills, setSkills] = useState();
   const classes = useStyles();
 
   useEffect(() => {
@@ -65,14 +65,14 @@ function App() {
             skill: "AWS GraphQL",
             stack: "Backend"
           }
-        ]
-        setSkills(apiData)
+        ];
+        setSkills(apiData);
       } catch (err) {
-        console.log('error: ', err)
+        console.log("error: ", err);
       }
     }
-    fetchData()
-  }, [])
+    fetchData();
+  }, []);
 
   return skills ? (
     <Grid container justify="center">
@@ -86,17 +86,24 @@ function App() {
       <Avatar alt="Remy Sharp" src={profile} className={classes.avatar} />
       <div>
         <section className="company-box">
-          <span>Neftali Papelleras</span> <a className="years twitter-link" target="_blank" href="https://twitter.com/pneftali">@pneftali</a>
+          <span>Neftali Papelleras</span>{" "}
+          <a
+            className="years twitter-link"
+            target="_blank"
+            href="https://twitter.com/pneftali"
+          >
+            @pneftali
+          </a>
           <p className="years">Software Engineer (8+ years)</p>
         </section>
 
         <fieldset className="tags-wrapper">
           <legend>about me</legend>
           <p className="about-me">
-          I am ambitious and driven.
-          I thrive on challenge and constantly set goals for myself, so I have something to strive toward.
-          I’m not comfortable with settling, and I’m always looking for an opportunity to do better and achieve greatness.
-          In my previous role, I was promoted two times in less than three years.
+            I am ambitious and driven. I thrive on challenge and constantly set
+            goals for myself, so I have something to strive toward. I’m not
+            comfortable with settling, and I’m always looking for an opportunity
+            to do better and achieve greatness.
           </p>
         </fieldset>
       </div>
@@ -107,7 +114,46 @@ function App() {
       <Avatar className={classes.blackAvatar}>OP</Avatar>
       <div>
         <section className="company-box">
-          <span>Open Source</span> <a className="years" target="_blank" href="https://github.com/n3rfd">(https://github.com/n3rfd)</a>
+          <span>Fullspeed Technologies</span>{" "}
+          <a
+            className="years"
+            target="_blank"
+            href="https://www.fullspeedtechnologies.com/"
+          >
+            (https://www.fullspeedtechnologies.com/)
+          </a>
+          <p className="years">2020/p></section>
+          <fieldset className="tags-wrapper">
+            <legend>Frontend</legend>
+            <span className="tags">javascript</span>
+            <span className="tags">reactjs</span>
+          </fieldset>
+          <fieldset className="tags-wrapper">
+            <legend>Backend</legend>
+            <span className="tags">nodejs</span>
+            <span className="tags">aws</span>
+            <span className="tags">express</span>
+            <span className="tags">mongodb</span>
+            <span className="tags">mongoose</span>
+            <span className="tags">redis</span>
+            <span className="tags">firebase</span>
+          </fieldset>
+          <fieldset className="tags-wrapper">
+            <legend>Others</legend>
+            <span className="tags">ios</span>
+            <span className="tags">objective-c</span>
+            <span className="tags">android</span>
+            <span className="tags">java</span>
+          </fieldset>
+        </div>
+
+        <div className="spacer"></div>
+
+        <section className="company-box">
+          <span>Open Source</span>{" "}
+          <a className="years" target="_blank" href="https://github.com/n3rfd">
+            (https://github.com/n3rfd)
+          </a>
           <p className="years">2019</p>
         </section>
 
@@ -143,7 +189,14 @@ function App() {
       <Avatar className={classes.blackAvatar}>BS</Avatar>
       <div>
         <section className="company-box">
-          <span>Bridge Software</span> <a className="years" target="_blank" href="https://www.bridgesoftware.com/">(https://www.bridgesoftware.com/)</a>
+          <span>Bridge Software</span>{" "}
+          <a
+            className="years"
+            target="_blank"
+            href="https://www.bridgesoftware.com/"
+          >
+            (https://www.bridgesoftware.com/)
+          </a>
           <p className="years">Software Engineer / Tech Lead</p>
           <p className="years">2014 - 2019 (5 years)</p>
         </section>
@@ -213,7 +266,10 @@ function App() {
       <Avatar className={classes.blackAvatar}>AR</Avatar>
       <div>
         <section className="company-box">
-          <span>Arcanys</span> <a className="years" target="_blank" href="https://www.arcanys.com/">(https://www.arcanys.com/)</a>
+          <span>Arcanys</span>{" "}
+          <a className="years" target="_blank" href="https://www.arcanys.com/">
+            (https://www.arcanys.com/)
+          </a>
           <p className="years">Software Engineer</p>
           <p className="years">2012 - 2013 (1 year)</p>
         </section>
@@ -251,7 +307,14 @@ function App() {
       <Avatar className={classes.blackAvatar}>NS</Avatar>
       <div>
         <section className="company-box">
-          <span>NextIX Systems</span> <a className="years" target="_blank" href="https://www.nextixsystems.com/">(https://www.nextixsystems.com/)</a>
+          <span>NextIX Systems</span>{" "}
+          <a
+            className="years"
+            target="_blank"
+            href="https://www.nextixsystems.com/"
+          >
+            (https://www.nextixsystems.com/)
+          </a>
           <p className="years">Software Engineer</p>
           <p className="years">2011 (1 year)</p>
         </section>
@@ -293,7 +356,7 @@ function App() {
     </Grid>
   ) : (
     <div>Loading...</div>
-  )
+  );
 }
 
 export default App;
