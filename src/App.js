@@ -122,7 +122,7 @@ function App() {
           >
             (https://www.fullspeedtechnologies.com/)
           </a>
-          <p className="years">2020/p></section>
+          <p className="years">2020</p></section>
           <fieldset className="tags-wrapper">
             <legend>Frontend</legend>
             <span className="tags">javascript</span>
