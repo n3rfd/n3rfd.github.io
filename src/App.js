@@ -122,33 +122,37 @@ function App() {
           >
             (https://www.fullspeedtechnologies.com/)
           </a>
-          <p className="years">2020</p></section>
-          <fieldset className="tags-wrapper">
-            <legend>Frontend</legend>
-            <span className="tags">javascript</span>
-            <span className="tags">reactjs</span>
-          </fieldset>
-          <fieldset className="tags-wrapper">
-            <legend>Backend</legend>
-            <span className="tags">nodejs</span>
-            <span className="tags">aws</span>
-            <span className="tags">express</span>
-            <span className="tags">mongodb</span>
-            <span className="tags">mongoose</span>
-            <span className="tags">redis</span>
-            <span className="tags">firebase</span>
-          </fieldset>
-          <fieldset className="tags-wrapper">
-            <legend>Others</legend>
-            <span className="tags">ios</span>
-            <span className="tags">objective-c</span>
-            <span className="tags">android</span>
-            <span className="tags">java</span>
-          </fieldset>
-        </div>
+          <p className="years">2020</p>
+        </section>
+        <fieldset className="tags-wrapper">
+          <legend>Frontend</legend>
+          <span className="tags">javascript</span>
+          <span className="tags">reactjs</span>
+        </fieldset>
+        <fieldset className="tags-wrapper">
+          <legend>Backend</legend>
+          <span className="tags">nodejs</span>
+          <span className="tags">aws</span>
+          <span className="tags">express</span>
+          <span className="tags">mongodb</span>
+          <span className="tags">mongoose</span>
+          <span className="tags">redis</span>
+          <span className="tags">firebase</span>
+        </fieldset>
+        <fieldset className="tags-wrapper">
+          <legend>Others</legend>
+          <span className="tags">ios</span>
+          <span className="tags">objective-c</span>
+          <span className="tags">android</span>
+          <span className="tags">java</span>
+        </fieldset>
+      </div>
 
-        <div className="spacer"></div>
+      <div className="spacer"></div>
 
+      {/* <div> */}
+      <Avatar className={classes.blackAvatar}>OP</Avatar>
+      <div>
         <section className="company-box">
           <span>Open Source</span>{" "}
           <a className="years" target="_blank" href="https://github.com/n3rfd">
