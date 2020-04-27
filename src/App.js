@@ -111,7 +111,7 @@ function App() {
       <div className="spacer"></div>
 
       {/* <div> */}
-      <Avatar className={classes.blackAvatar}>OP</Avatar>
+      <Avatar className={classes.blackAvatar}>FS</Avatar>
       <div>
         <section className="company-box">
           <span>Fullspeed Technologies</span>{" "}
