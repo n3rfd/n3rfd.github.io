@@ -94,7 +94,7 @@ function App() {
           >
             @pneftali
           </a>
-          <p className="years">Software Engineer (8+ years)</p>
+          <p className="years">Software Engineer (10+ years)</p>
         </section>
 
         <fieldset className="tags-wrapper">
@@ -122,7 +122,7 @@ function App() {
           >
             (https://www.fullspeedtechnologies.com/)
           </a>
-          <p className="years">2020</p>
+          <p className="years">2021</p>
         </section>
         <fieldset className="tags-wrapper">
           <legend>Frontend</legend>
@@ -141,6 +141,7 @@ function App() {
         </fieldset>
         <fieldset className="tags-wrapper">
           <legend>Others</legend>
+          <span className="tags">flutter</span>
           <span className="tags">ios</span>
           <span className="tags">objective-c</span>
           <span className="tags">android</span>
